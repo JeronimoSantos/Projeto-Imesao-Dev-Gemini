@@ -4,7 +4,6 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -12,12 +11,53 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    background-color: #30475E;
+}
+
+/* Estiliza o cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42rem;
+}
+
+.cabecalho-paragrafo {
+    margin: 2rem;
+    font-size: 1.80rem;
+    font-family: sans-serif;
+    color: #1b66ff;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #97c4ad;
+    text-align: center;
+    background-color: #2e2e2e;
+    border-radius: 3rem;
+    padding: 2rem;
+    border: solid 2px #1b66ff;
+}
+
+.mensagem-forte {
+    margin: 2rem;
+    font-size: 2.25rem;
+    color: #412a9c;
+    font-style: italic;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px #97c4ad;
+    text-align: center;
 }
 
 /* Estiliza os títulos h1 */
-h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+.cabecalho-titulo {
+    font-size: 3.5rem; /* Tamanho da fonte */
+    color: #1b66ff; /* Cor do texto */
+    padding: 2rem;
+    border: double 0.50rem #1b66ff;
+    text-shadow: 1px 1px 1px #F5F7F8;
+    border-radius: 20rem 0 0 20rem;
+    background-color: #2e2e2e; /* Cor de fundo da página */
+    font-style: italic; /* Adiciona estilo na font */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
@@ -80,7 +120,7 @@ section button:hover {
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
+    font-size: 2.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
 }
 
@@ -99,6 +139,7 @@ section button:hover {
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+    font-size: 1.50rem;
 }
 
 /* Estiliza o rodapé da página */
@@ -108,7 +149,6 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }

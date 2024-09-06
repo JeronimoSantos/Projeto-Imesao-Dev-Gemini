@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imersão Dev Gemini</title>
+    <link rel="shortcut icon" type="imagens/icon" href="./Imagens/local-na-rede-internet.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Mundo HTML</h1>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">Mundo Desenvolvimento Web</h1>
+        <p class="cabecalho-paragrafo">O mundo do desenvolvimento web está em constante evolução, 
+            com novas tecnologias surgindo a todo momento. No entanto, algumas se destacam por sua 
+            relevância e ampla utilização.<br> você encontrará um resumo das principais tecnologias 
+            que todo desenvolvedor web deve conhecer.
+        </p>
+        <blockquote class="mensagem-forte">"A web é a nossa tela em branco, e o código é a nossa paleta de 
+            cores."
+        </blockquote>
     </header>
 
     <main>
         <section>
-            <input type="text" placeholder="Name">
-            <button>Pesquisar</button>
+            <input type="text" placeholder="Digite sua Tecnologia" class="">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-            <h2>
-                <a href="#"  target="_blank">HTML</a>
-            </h2>
-            <p class="descricao-meta">Tags HTML são os blocos de construção fundamentais de uma página da web. Elas são como instruções que você dá ao navegador para definir a estrutura e o conteúdo de uma página. Imagine que você está montando um quebra-cabeça, cada peça representa uma tag. Ao encaixar as peças, você cria uma imagem completa.</p>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Mais informações</a>
-            </div>
-
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">CSS</a>
-                </h2>
-                <p class="descricao-meta">CSS é a linguagem de estilos utilizada para definir a aparência visual de um documento HTML. Com CSS, você pode controlar cores, fontes, layout, e muito mais.</p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Mais informações</a>
-            </div>
-            
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">JavaScript</a>
-                </h2>
-                <p class="descricao-meta">JavaScript é uma linguagem de programação que adiciona interatividade a páginas da web. Com JavaScript, você pode criar animações, validar formulários, e muito mais.</p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Mais informações</a>
-            </div>
-        </section>
+        <section id="resultados-pesquisa" class="resultados-pesquisa"></section>
     </main>
 
     <footer>
