@@ -313,6 +313,14 @@ section button:hover {
         font-size: 1rem;
         text-align: center;
     }
+
+    .rodape-ancora {
+        border-radius: 3rem;
+    }
+
+    .rodape-ancora3 {
+        border-radius: 3rem;
+    }
 }
 
 @media (max-width: 560px) {
@@ -356,5 +364,13 @@ section button:hover {
 
     .rodape {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+
+    .rodape-ancora {
+        border-radius: 3rem;
+    }
+
+    .rodape-ancora3 {
+        border-radius: 3rem;
     }
 }
