@@ -1,30 +1,31 @@
-let dadosCabecalho = [
-];
-
 let dadosDev = [
     {
         img: "Imagens/Icones/html-5.png",
         titulo: "Html (HyperText Markup Language)",
         descricao: "A linguagem padrão para estruturação de páginas web. Define a semântica e a organização do conteúdo.",
         link: "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element",
+        tags: "HTML html marcação de testo css"
     },
     {
         img: "Imagens/Icones/css.png",
         titulo: "Css (Cascading Style Sheets)",
         descricao: "Responsável por estilizar a aparência visual das páginas, controlando cores, fontes, layout e responsividade.",
-        link: "https://css-tricks.com/"
+        link: "https://css-tricks.com/",
+        tags: "CSS css estilos pagina de estilos"
     },
     {
         img: "Imagens/Icones/js.png",
         titulo: "JavaScript",
         descricao: "A linguagem de programação que adiciona interatividade às páginas web. Permite criar animações, manipular o DOM (Document Object Model) e construir aplicações complexas.",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        tags: "JAVASCRIPT javascript "
     },
     {
         img: "Imagens/Icones/react.png",
         titulo: "React",
         descricao: "Biblioteca JavaScript para construção de interfaces de usuário, popular por sua performance e componentes reutilizáveis.",
-        link: "https://react.dev/reference/react"
+        link: "https://react.dev/reference/react",
+        tags: "REACT react "
     },
     {
         img: "Imagens/Icones/angular.png",

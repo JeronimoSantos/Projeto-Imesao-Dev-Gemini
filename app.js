@@ -15,13 +15,15 @@ function pesquisar() {
     let resultados = "";
     let titulo = "";
     let descricao = "";
+    let tags = "";
 
     // Itera sobre os dados da pesquisa e cria o HTML para cada resultado
     for (let dados of dadosDev) {
         titulo = dados.titulo.toLowerCase()
         descricao = dados.descricao.toLowerCase()
+        tags = dados.tags.toLowerCase()
 
-        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
+        if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa) ) {
 
         // Cria um novo elemento
         resultados += `
@@ -35,10 +37,13 @@ function pesquisar() {
             <p class="descricao-meta">${dados.descricao}</p>
             <a href=${dados.link} target="_blank">Documentação para saber mais</a>
         </section>`
-        } else if (!resultados) {
-            resultados = `<p class="cabecalho-paragrafo">Desculpa, Tecnologia não encontrada :(<p>`
         }
     };
+
+    if (!resultados) {
+            resultados = `<p class="cabecalho-paragrafo">Desculpa, Tecnologia não encontrada :(<p>`
+            return
+    }
 
     // Atualiza o conteúdo da seção com os resultados formatados
     section.innerHTML = resultados;
