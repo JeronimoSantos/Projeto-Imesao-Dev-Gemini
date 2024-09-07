@@ -11,7 +11,11 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
-    background-color: #30475E;
+    background-image: url(Imagens/desenvolvimento-web-coffee.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Estiliza o cabeçalho */
@@ -31,7 +35,7 @@ body {
     font-weight: 500;
     text-shadow: 1px 1px 1px #97c4ad;
     text-align: center;
-    background-color: #2e2e2e;
+    background-image: linear-gradient(to bottom, #010937, #2e2e2e );
     border-radius: 3rem;
     padding: 2rem;
     border: solid 2px #1b66ff;
@@ -39,10 +43,14 @@ body {
 
 .mensagem-forte {
     margin: 2rem;
-    font-size: 2.25rem;
-    color: #412a9c;
+    font-size: 1.70rem;
+    color: #1b66ff;
     font-style: italic;
     font-weight: 600;
+    padding: 1rem;
+    border: solid 1px #1b66ff;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom, #101f78, #424e5e);
     font-family: sans-serif;
     text-shadow: 1px 1px 1px #97c4ad;
     text-align: center;
@@ -56,7 +64,7 @@ body {
     border: double 0.50rem #1b66ff;
     text-shadow: 1px 1px 1px #F5F7F8;
     border-radius: 20rem 0 0 20rem;
-    background-color: #2e2e2e; /* Cor de fundo da página */
+    background-image: linear-gradient(to bottom, #010937, #2e2e2e ); /* Cor de fundo da página */
     font-style: italic; /* Adiciona estilo na font */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
@@ -73,11 +81,13 @@ section {
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 30rem; /* Largura dos inputs */
+    background-color: #010937;
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
+    color: #F5F7F8; /* Cor do texto */
+    font-style: italic;
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
@@ -87,7 +97,9 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
+    background-color: #101f78; /* Cor de fundo do botão */
+    background-position: center;
+    background-repeat: no-repeat;
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -95,7 +107,8 @@ section button {
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #010937; /* Muda a cor de fundo ao passar o mouse */
+    border: solid 1px #F5F7F8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
@@ -104,24 +117,39 @@ section button:hover {
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
+    margin-top: 2rem; /* Espaçamento acima da caixa de resultados */
+    padding: 2rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+}
+
+.item-alinhado {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background-image: linear-gradient(to bottom, #ffffea, #91b9ff); /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    border: solid 1px #010937;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
+    padding-left: 1rem;
     font-size: 2.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
+    transition: transform 300ms ease-in-out;
+}
+
+.item-resultado h2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -138,13 +166,14 @@ section button:hover {
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
+    text-shadow: 1px 1px 1px #F5F7F8;
     margin: 0.5rem 0; /* Margem acima e abaixo */
     font-size: 1.50rem;
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+     /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */

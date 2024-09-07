@@ -9,31 +9,34 @@
 </head>
 <body>
 
-    <header class="cabecalho">
-        <h1 class="cabecalho-titulo">Mundo Desenvolvimento Web</h1>
+<header class="cabecalho">
+    <h1 class="cabecalho-titulo">Mundo Desenvolvimento Web</h1>
         <p class="cabecalho-paragrafo">O mundo do desenvolvimento web está em constante evolução, 
             com novas tecnologias surgindo a todo momento. No entanto, algumas se destacam por sua 
-            relevância e ampla utilização.<br> você encontrará um resumo das principais tecnologias 
+            relevância e ampla utilização.<br> Você encontrará um resumo das principais tecnologias 
             que todo desenvolvedor web deve conhecer.
         </p>
+        
         <blockquote class="mensagem-forte">"A web é a nossa tela em branco, e o código é a nossa paleta de 
             cores."
         </blockquote>
-    </header>
+</header>
 
-    <main>
-        <section>
-            <input type="text" placeholder="Digite sua Tecnologia" class="">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </section>
-        <section id="resultados-pesquisa" class="resultados-pesquisa"></section>
-    </main>
+<main>
+    <section>
+        <input id="campo-pesquisar" type="text" placeholder="Digite sua Tecnologia">
+        <button onclick="pesquisar()">Pesquisar</button>
+    </section>
 
-    <footer>
-        <p>2024 - Mundo HTML. Todos os direitos reservados</p>
-        <p>Entre em contato</p>
-    </footer>
-    <script src="dados.js"></script>
-    <script src="app.js"></script>
+    <section id="resultados-pesquisa" class="resultados-pesquisa"></section>
+</main>
+
+<footer>
+    <p>2024 - Mundo HTML. Todos os direitos reservados</p>
+    <p>Entre em contato</p>
+</footer>
+
+<script src="dados.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
