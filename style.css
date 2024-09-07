@@ -289,7 +289,7 @@ section button:hover {
 
 @media (max-width: 768px) {
     .cabecalho-titulo {
-        margin-top: 8rem;
+        margin-top: 12rem;
         text-align: center;
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
@@ -325,7 +325,7 @@ section button:hover {
 @media (max-width: 480px) {
 
     .cabecalho-titulo {
-        margin-top: 30rem;
+        margin-top: 80rem;
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
         text-align: center;
         letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
