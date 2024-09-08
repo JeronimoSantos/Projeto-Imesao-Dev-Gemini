@@ -42,7 +42,6 @@ function pesquisar() {
 
     if (!resultados) {
             resultados = `<p class="cabecalho-paragrafo">Desculpa, Tecnologia não encontrada :(<p>`
-            return
     }
 
     // Atualiza o conteúdo da seção com os resultados formatados
